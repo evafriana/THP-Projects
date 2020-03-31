@@ -1,0 +1,96 @@
+body
+{
+    font-family: Open Sans,Arial;
+    color: #454545;
+    font-size: 16px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.mfw
+{
+	color: #730000;
+}
+.wr
+{
+	color: #c0392b;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.sb
+{
+	color: blue;
+}
+.vc
+{
+	color: #551a8b;
+}
+.href
+{
+	color: #730000;
+}
+
+.kotakhitam1:before 
+{
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    background-color: #444;
+}
+.kotakhitam2:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    background-color: #454545;
+}
+
+.caption
+{
+    font-size: .7em;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.fancyPositioning .picture-left 
+{
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    margin-right: -1em;
+}
+
+.fancyPositioning .tleft 
+{
+    float: left;
+    width: 55%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
