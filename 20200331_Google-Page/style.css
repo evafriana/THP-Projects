@@ -7,11 +7,21 @@ header
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 60px;  
+    height: 60px; 
+    cursor: pointer;
+}
+.mainlist:visited 
+{
+  color: #609; 
+}
+.mainlist:hover 
+{
+  color: #5F5F5F;
+  text-decoration: underline;
 }
 .item1
 {
-    padding: 30px;
+    padding: 20px;
 }
 .icon
 {
@@ -139,15 +149,25 @@ footer
 .secondlist li 
 {
     padding: 0 10px 0 0;
+    cursor: pointer;
 }
 
 .thirdlist li 
 {
     padding: 0 0 0 10px;
+    cursor: pointer;
 }
 li
 {
     display: inline;
+}
+.secondlist li:hover 
+{
+  text-decoration: underline;
+}
+.thirdlist li:hover
+{
+  text-decoration: underline;
 }
 
 
