@@ -1,41 +1,42 @@
-body 
+
+header
+.mainlist
 {
-	margin: 0;
-	padding: 0;
-    font-family: arial,sans-serif;
+	font-size: 13px;
+    padding: 0px 30px 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;  
 }
-#nav
+.item1
 {
-	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse;
-}
-#mainlist
-{
-	list-style: none;
-    margin-left: 1300px;   
-}
-li
-{
-	float: left;
-	padding: 8px;
-	display: inline;
+    padding: 30px;
 }
 .icon
 {
-	height: 30px;
+	height: 20px;
+    padding: 20px;
 }
 .account
 {
     height: 30px;
 }
-.container
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: arial,sans-serif;
+}
+#container
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 80px;
 }
 #google
 {
@@ -144,7 +145,10 @@ footer
 {
     padding: 0 0 0 10px;
 }
-
+li
+{
+    display: inline;
+}
 
 
 
