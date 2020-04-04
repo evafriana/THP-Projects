@@ -1,0 +1,16 @@
+.jumbotron
+{
+  height: 800px;
+
+  background-image: url("talkshow.png");
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: #0c1824
+}
+
+.display-4
+{
+  font-size: 70px
+}

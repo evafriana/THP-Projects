@@ -1,0 +1,78 @@
+
+body
+{
+  background-color: #000000;
+
+}
+
+.jumbotron
+{
+  height: 800px;
+
+  background-image: url("talkshow.png");
+
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-color: #000000;
+  padding-left: 2rem;
+}
+.nav-link:hover
+{
+  text-decoration: underline;
+}
+.display-4
+{
+  font-size: 50px
+}
+.content
+{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  margin: 0 170px 0 170px;
+}
+.icon
+{
+  height: 200px;
+}
+.image
+{
+  width: 60%;
+  height: auto;
+}
+.overlay
+{
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+}
+.card
+{
+  background-color: rgba(20, 20, 20, 1);
+}
+.categories:hover, .seeall:hover
+{
+  text-decoration: underline;
+}
+.list-unstyled:hover
+{
+  text-decoration: underline;
+}
+
+/*-------------footer---------------*/
+
+
+
+
+
+
+
+
