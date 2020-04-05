@@ -19,7 +19,6 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 .nav-link:hover
 {
@@ -68,8 +67,8 @@ body
 }
 .list-unstyled:hover
 {
-  text-decoration: underline;
-  cursor: pointer;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 /*-------------footer---------------*/
