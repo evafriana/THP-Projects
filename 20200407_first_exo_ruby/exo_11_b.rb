@@ -3,5 +3,4 @@ print "> "
 num = gets.chomp
 
 
-num.to_i.times do print "Salut, ça farte ? "
-end
+num.to_i.times { print "Salut, ça farte ? " }
