@@ -9,11 +9,3 @@ def sum_of_3_or_5_multiples(final_number)
     'Yo ! Je ne prends que les entiers naturels. TG'
   end
 end
-
-puts sum_of_3_or_5_multiples(10)
-puts sum_of_3_or_5_multiples(11)
-puts sum_of_3_or_5_multiples(0)
-puts sum_of_3_or_5_multiples(3)
-puts sum_of_3_or_5_multiples(-1)
-puts sum_of_3_or_5_multiples(1.23)
-puts sum_of_3_or_5_multiples('chiffre')
