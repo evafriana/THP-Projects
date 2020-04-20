@@ -11,8 +11,13 @@ class User
     return @@all_users
   end
 
-  def self.find_by_email(tintin)
-    self.all.select do |x| x.email == tintin end.first
+  def self.find_by_email(an_email)
+    result = self.all.select do |user| user.email == an_email end.first
+    if result.nil?
+       "aucun utilisateur n'a cet email"
+    else
+      result
+    end
   end
 end
 

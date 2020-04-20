@@ -5,8 +5,7 @@ require 'time'
 
 julie = User.new("julie@email.com", 32)
 jean = User.new("jean@email.com", 35)
-romain = User.new("toto@email.com", 31)
-eva = User.new("toto@email.com", 30)
+toto = User.new("toto@email.com", 31)
 
 # p User.all
 
@@ -16,6 +15,6 @@ eva = User.new("toto@email.com", 30)
 
 # or !my_event.is_past? --> ! comme "is_past?" en inverse la comparaison entre @start_time et l'heure actuelle, soit tu peux utiliser le fait qu'en Ruby, "!" permet d'obtenir le booléen inverse. Ainsi, le booléen inverse de my_event.is_past? est !my_event.is_past? .
 
-toto = User.find_by_email("toto@email.com")
+my_search = User.find_by_email("toto@email.com")
 
-puts "Voici l'age du User trouvé : #{toto.name}"
+puts "Voici l'age du User trouvé : #{my_search.age}"
