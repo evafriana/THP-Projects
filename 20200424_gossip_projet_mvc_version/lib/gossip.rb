@@ -19,7 +19,7 @@ class Gossip
 
     CSV.foreach("db/gossip.csv") do |ligne|
       gossip_provisoire = Gossip.new(ligne[0], ligne[1])
-      gossips_array << gossip_provisoire
+      all_gossips << gossip_provisoire
       end
 
     return all_gossips

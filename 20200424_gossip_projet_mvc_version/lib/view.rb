@@ -20,5 +20,11 @@ class View
       puts gossip.content
     end
   end
+
+  def destroy_gossip
+    puts "Quel gossip veux tu supprimer ?"
+    print '> '
+    input = gets.chomp
+  end
 end
 

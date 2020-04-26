@@ -5,7 +5,6 @@ require_relative 'view'
 class Controller
   def initialize
     @view = View.new
-    @gossip = nil
   end
 
   def create_gossip
@@ -19,5 +18,19 @@ class Controller
   def index_gossips
     gossips = Gossip.all
     @view.index_gossips(gossips)
+  end
+
+  def clear_csv
+    CSV.open("db/gossip.csv", "w")
+  end
+
+  def destroy
+    index_gossips
+    input = @view.destroy_gossip.to_i - 1
+    gossips = Gossip.all
+    gossips.delete_at(input)
+    clear_csv
+    gossips.each { |gossip| gossip.save }
+    index_gossips
   end
 end
