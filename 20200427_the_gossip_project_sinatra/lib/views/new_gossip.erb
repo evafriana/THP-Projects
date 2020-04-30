@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="py-3">#BalanceTonPotin</h1>
+      <p class="py-3">Balance ton potin via le formulaire ci-dessous 👇</p>
+      <form action='/gossips/new/' method='POST' class="form-group p-5 border rounded">
+        Quel est ton nom ?  <input type='text' name='gossip_author' class="form-control" placeholder="LDP" /><br/>
+        Quel est ton potin ? <input type='text' name='gossip_content' class="form-control" placeholder="Vays-y, crache ton venin!" /><br/>
+        <input type='submit' class="btn btn-primary w-100" s/>
+      </form>
+      <a href="/">Retourne à la page des potins</a>
+    </div>
+  </body>
+</html>

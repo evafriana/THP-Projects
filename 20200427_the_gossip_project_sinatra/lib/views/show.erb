@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <div class="container py-3 text-center">
+      <h1>PAGE POTIN</h1>
+      <br>
+      <div class="card py-3">
+        <h2 class="card-title">Voici la page du potin n°<%= params['id']%></h2>
+        <div class="card-body text-left">
+          <div class="card-text">
+            <p><strong>Son auteur : </strong><%= gossip.author %></p>
+            <p><strong>Le contenu du potin : </strong><%= gossip.content %></p>
+          </div>
+          <a href="edit/" class="btn btn-primary btn-sm">Edite le potin</a>
+        </div>
+      </div>
+      <br>
+      <a href="/">Retourne à la page des potins</a>
+    </div>
+  </body>
+</html>

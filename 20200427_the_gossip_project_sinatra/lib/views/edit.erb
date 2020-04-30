@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Editer un potin</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="py-3">Edite le potin n°<%= gossip_id = params[:id] %></h1>
+      <br>
+      <div class="card p-3 rounded">
+        <p class="text-left"><strong>La LDP : </strong> <%= gossip.author %></p>
+        <p class="text-left"><strong>L'ancien contenu du potin : </strong><%= gossip.content %></p>
+      </div>
+      <br>
+      <br>
+      <p><strong>Change ton potin via le formulaire ci-dessous 👇</strong></p>
+      <form action='/gossips/:id/edit/' method='POST' class="form-group p-5 border rounded">
+        Quel est ton nom, langue de vipère ? <input type='text' name='gossip_author_new' class="form-control" placeholder="FDP"/><br/>
+        Change le potin : <input type='text' name='gossip_content_new' class="form-control" placeholder="Vays-y, crache ton venin!" /><br/>
+        <input type='hidden' name='the_id' value='<%= gossip_id %>'/>
+        <input type='submit' class="btn btn-primary w-100"/>
+      </form>
+      <a href="/">Retourne à la page des potins</a>
+    </div>
+  </body>
+</html>
