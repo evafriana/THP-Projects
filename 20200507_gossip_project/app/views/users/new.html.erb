@@ -1,0 +1,21 @@
+<br>
+<br>
+<div class="container">
+  <h1>Create new account</h1>
+<br>
+    <div class="form-group text-left py-4 px-5 border rounded bg-white">
+      <%= simple_form_for(@user) do |f| %>
+        <%= f.input :first_name %>
+        <%= f.input :last_name %>
+        <%= f.input :city %>
+        <%= f.input :age %>
+        <%= f.input :email %>
+        <%= f.input :description %>
+        <%= f.input :password %>
+        <%= f.input :password_confirmation %>
+        <%= f.button :submit, class: 'btn btn-primary'  %>
+      <% end %>
+    </div>
+</div>
+<br>
+<br>

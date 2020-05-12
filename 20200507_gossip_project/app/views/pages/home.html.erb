@@ -1,0 +1,21 @@
+<div class="jumbotron">
+      <h1>We may be apart, </h1>
+      <h1>but we’ll get through this together.</h1>
+      <br>
+      <p>You dont have an account ? <%= link_to 'Join Us', new_user_path  %></p>
+</div>
+
+<div class="container">
+  <% @gossips.each do |gossip| %>
+  <div class="form-group text-left py-4 px-5 border rounded bg-white">
+
+  <article>
+    <h2><%= gossip.title.capitalize %></h2>
+    <p>In <%= gossip.user.city.name %> <em><%= time_ago_in_words(gossip.updated_at) %> ago</em></h3>
+    <p><%= gossip.teaser  %></p>
+  </article>
+  </div>
+  <% end %>
+</div>
+
+

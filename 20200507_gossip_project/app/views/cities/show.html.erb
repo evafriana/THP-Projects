@@ -1,0 +1,19 @@
+<br>
+<br>
+<div class="container">
+  <h1>Newest gossips from <%= @city.name %>:</h1>
+  <br>
+  <% @city_gossips.each do |gossip| %>
+  <div class="form-group text-left py-4 px-5 border rounded bg-white">
+
+  <article>
+    <h2><%= link_to gossip.title.capitalize, gossip_path(gossip) %></h2>
+    <p>By <%= gossip.user.first_name %>, in <%= link_to gossip.user.city.name, city_path(gossip.user.city) %> <em><%= time_ago_in_words(gossip.updated_at) %> ago</em></h3>
+    <p><%= gossip.teaser  %></p>
+  </article>
+  </div>
+  <% end %>
+
+  <%= link_to 'Back to gossips', gossips_path, class: "btn btn-primary" %>
+</div>
+
