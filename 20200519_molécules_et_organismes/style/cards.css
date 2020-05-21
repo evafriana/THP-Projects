@@ -1,0 +1,75 @@
+.card-simple {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.card-simple img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.card-body {
+  padding: 0 24px 24px 24px ;
+}
+.card-text {
+  overflow: hidden;
+  width: 85%;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 0 24px 24px 24px ;
+}
+.card-product {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+.card-info {
+  padding: 24px;
+}
+.card-avatar {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+}
+.card-avatar img {
+  height: 95px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 24px;
+  object-fit: cover;
+}
+.card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.card-img img {
+  height: 50px;
+  width: 50px;
+  display: block;
+}
+
+
+
+
+
+

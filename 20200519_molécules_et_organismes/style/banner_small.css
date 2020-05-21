@@ -1,0 +1,24 @@
+.jumbotron-small {
+  height: 400px;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: #073642;
+  background-image: url("https://source.unsplash.com/random");
+  background-color: #78909c !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 3px 3px black;
+}
+
+.banner {
+  display:flex;
+  justify-content: end;
+  margin: 10% 10% 0 0;
+}
+.text-light {
+  color: #FDF6E3 !important;
+}
+.fa-github {
+  font-size: 120px;
+}
