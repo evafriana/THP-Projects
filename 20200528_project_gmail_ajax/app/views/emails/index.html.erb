@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+  <div class="boite-reception container-fluid row">
+    <h1 class="mr-auto">Boîte de réception</h1>
+    <%= link_to emails_path, method: :post, remote: true do %>
+        <div class='btn btn-primary'>Nouveau message</div>
+    <% end %>
+  </div>
+</div>
+<br/>
+
+<div class="container border border rounded bg-white mt-lg-4 mb-5">
+  <div class="row">
+
+
+    <div class="col-4 border-right my-5 px-4">
+      <h2 class="text-left">Emails reçus</h2>
+      <div class="list-group mt-4">
+
+        <% @emails.each do |email| %>
+          <% if email.read == false %>
+            <%= link_to "#{email.object}", email_path(email), { :remote => true, class: "list-group-item list-group-item-action #{email.object}" } %>
+          <% else %>
+            <%= link_to "#{email.object}", email_path(id: email.id, read: true), { :remote => true, class: "list-group-item list-group-item-action #{email.object}" } %>
+          <% end %>
+        <% end %>
+
+      </div>
+    </div>
+
+    <div class="col-6 my-5 px-4">
+      <h2 class="text-center">Email sélectionné</h2>
+      <div id="show-email">
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+

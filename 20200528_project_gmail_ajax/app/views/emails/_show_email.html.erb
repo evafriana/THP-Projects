@@ -1,0 +1,30 @@
+<br>
+<br>
+<div id="content-child">
+  <h4><%= @email.object %></h4>
+  <p><%= @email.body %></p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="row boutons-email">
+    <%= link_to "Supprimer", email_path(email), :method => :delete, :class => "btn btn-primary bouton-email mx-3", remote: true %>
+    <div>
+      <% if email.read == true %>
+        <%= link_to "Marquer comme non lu", email_path(email), :method => :put, :class => "btn btn-outline-primary bouton-email", remote: true %>
+      <% else %>
+        <%= link_to "Marquer comme lu", email_path(email), :method => :put, :class => "btn btn-outline-primary bouton-email", remote: true %>
+      <% end %>
+    </div>
+  </div>
+</div>

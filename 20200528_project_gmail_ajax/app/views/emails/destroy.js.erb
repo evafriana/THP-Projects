@@ -1,0 +1,5 @@
+alert('Deleted email!');
+
+document.querySelector('a[class*="<%= @email.object %>"').remove();
+document.querySelector("#show-email").remove();
+
